@@ -1,0 +1,32 @@
+{
+  "name": "formik-alicante",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "draft-js": "0.10.1",
+    "formik": "^1.3.0",
+    "glamor": "^2.20.40",
+    "lodash": "^4.17.11",
+    "palx": "^1.0.3",
+    "pose": "^2.3.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-pose": "^3.3.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-spring": "^5.7.2",
+    "yup": "^0.26.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "deck": "mdx-deck src/deck.mdx",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "mdx-deck": "^1.7.3"
+  }
+}
