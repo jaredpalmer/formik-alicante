@@ -1,4 +1,4 @@
-# "Taming Forms in React"
+# Taming Forms in React
 
 These are some of the demos from my talk about forms and [Formik](https://github.com/formik) @ [React Alicante](http://reactalicante.es/) on September 15, 2018.
 
