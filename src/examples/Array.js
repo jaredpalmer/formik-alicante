@@ -1,10 +1,9 @@
 import React from 'react';
 import { Formik, Field, Form, FieldArray, ErrorMessage } from 'formik';
-import { Debug } from '../Debug';
+import { Debug } from '../components/Debug';
 import * as Yup from 'yup';
 import { EditorState } from 'draft-js';
-import { RichEditorExample } from './RichEditor';
-// import { Debug } from '../Debug';
+import { RichEditorExample } from '../components/RichEditor';
 
 const initialValues = {
   friends: [

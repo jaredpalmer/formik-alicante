@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, FastField, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { Debug } from '../Debug';
+import { Debug } from '../components/Debug';
 
 const Fieldset = ({ label, name, ...props }) => (
   <React.Fragment>
