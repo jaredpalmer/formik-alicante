@@ -34,9 +34,12 @@ class MiniFormik extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    // validate
+    // set all fields as touched
+    // set isSubmitting
+    // set isValidating
     this.props.onSubmit(this.state.values);
   };
+
   render() {
     return this.props.children({
       ...this.state,
@@ -99,9 +102,7 @@ class Reservation extends React.Component {
 
 export default Reservation;
 
-/** @private is the given object an Object? */
-export const isObject = obj => obj !== null && typeof obj === 'object';
-
+// One helper from Formik's source!
 /**
  * Recursively a set the same value for all keys and arrays nested object, cloning
  * @param object
@@ -115,6 +116,9 @@ export function setNestedObjectValues(
   visited = new WeakMap(),
   response = {}
 ) {
+  /** @private is the given thing an Object? */
+  const isObject = obj => obj !== null && typeof obj === 'object';
+
   for (let k of Object.keys(object)) {
     const val = object[k];
     if (isObject(val)) {
